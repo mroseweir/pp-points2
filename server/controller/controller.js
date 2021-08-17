@@ -4,6 +4,6 @@ module.exports = {
   getPoints: (res, req) => {
     res.status(200).send(data);
   },
-  //add Points
+  //update Points
   //add Student
 };
