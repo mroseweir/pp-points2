@@ -1,43 +1,37 @@
-import React, {useState} from 'react'
-
-
+import React, { useState } from "react";
+import "../App.css";
 function PlusMinusBtn() {
-    const [state, setState] = useState({count: 0});
-    const count = state.count;
+  const [state, setState] = useState({ count: 0 });
+  const count = state.count;
 
-    function decrementCount() {
-        setState(prevState => {
-            return {count: prevState.count - 1}
-        })
-    }
+  function decrementCount() {
+    setState((prevState) => {
+      return { count: prevState.count - 1 };
+    });
+  }
 
-    function incrementCount() {
-        setState(prevState => {
-            return {count: prevState.count + 1}
-        })
-    }
+  function incrementCount() {
+    setState((prevState) => {
+      return { count: prevState.count + 1 };
+    });
+  }
 
-    function incrementCountFive() {
-        setState(prevState => {
-            return {count: prevState.count + 5}
-        })
-    }
+  return (
+    <div>
+      <button onClick={decrementCount}>-</button>
+      <span>{count}</span>
+      <button onClick={incrementCount}>+</button>
+      <label class="switch">
+        <input type="checkbox"></input>
+        <span class="slider round"></span>
+      </label>
 
-    function resetCount() {
-        setState(prevState => {
-            return {count: prevState.count = 0}
-        })
-    }
-
-    return (
-        <div>
-            <button onClick={resetCount}>Reset</button>
-            <button onClick={decrementCount}>-</button>
-            <span>{count}</span>
-            <button onClick={incrementCount}>+</button>
-            <button onClick={incrementCountFive}>+5</button>
-        </div>
-    )
+      <label class="switch">
+        <input type="checkbox"></input>
+        <span class="slider round"></span>
+      </label>
+    </div>
+  );
 }
 
-export default PlusMinusBtn
+export default PlusMinusBtn;
