@@ -1,8 +1,20 @@
 [
   {
     "accountId": 1,
-    "username": "test",
-    "password": "password",
+    "username": "KatieSchooling",
+    "password": "abc123",
     "accoutTypeId": 1
+  },
+  {
+    "accountId": 2,
+    "username": "JessicaSwenson",
+    "password": "abc123",
+    "accountTypeId": 1
+  },
+  {
+    "accountId": 3,
+    "username": "MichelleMcBrady",
+    "password": "abc123",
+    "accountTypeId": 1
   }
 ]
