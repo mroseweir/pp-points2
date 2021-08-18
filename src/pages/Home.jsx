@@ -5,7 +5,6 @@ function home() {
   return (
     <div>
       <Header />
-      <PlusMinusBtn />
       <h1>Home</h1>
     </div>
   );
