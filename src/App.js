@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import { Route, Switch } from "react-router-dom";
 import AddStudent from "../src/pages/AddStudent";
 import StudentDirectory from "../src/pages/StudentDirectory";

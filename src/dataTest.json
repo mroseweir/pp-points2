@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Spec 1",
+    "specialization": "Web Dev"
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Spec 1",
+    "specialization": "Web Dev"
+  },
+  {
+    "id": 3,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Spec 1",
+    "specialization": "Web Dev"
+  },
+  {
+    "id": 3,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Spec 1",
+    "specialization": "Web Dev"
+  }
+]

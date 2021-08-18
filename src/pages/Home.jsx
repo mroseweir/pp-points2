@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import PlusMinusBtn from "../../src/components/PlusMinusBtn";
+// import PlusMinusBtn from "../../src/components/PlusMinusBtn";
 function home() {
   return (
     <div>

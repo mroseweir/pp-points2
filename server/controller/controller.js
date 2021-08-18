@@ -5,7 +5,7 @@ module.exports = {
   getPoints: (req, res) => {
     res.status(200).send(data);
   },
-  getLogin: (res, req) => {
+  getLogin: (req, res) => {
     res.status(200).send(login);
   },
   addStudent: (req, res) => {
