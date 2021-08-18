@@ -13,6 +13,9 @@ The students name `res.data.name`
 The students point count `res.data.points`
 The students cohort `res.data.cohort`
 The students specialization `res.data.specialization`
+If the student passed milestone1 `res.data.milestone1`
+If the student passed milestone2 `res.data.milestone2`
+If the student passed milestone3 `res.data.milestone3`
 
 ## getLogin
 

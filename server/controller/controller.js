@@ -54,15 +54,4 @@ module.exports = {
       res.status(200).send(data);
     }
   },
-  updateLogin: (req, res, next) => {
-    const { id } = req.params;
-    const { type } = req.body;
-
-    const index = data.findIndex((user) => {
-      return user.id === +id;
-    });
-
-    login[index].password = type;
-    res.status(200).send(login);
-  },
 };
