@@ -54,15 +54,32 @@ module.exports = {
       res.status(200).send(data);
     }
   },
-  updateLogin: (req, res, next) => {
+  updateMilestone: (req, res, next) => {
     const { id } = req.params;
     const { type } = req.body;
-
-    const index = data.findIndex((user) => {
-      return user.id === +id;
+    const sendIt = res.status(200).send(data);
+    const index = data.findIndex((student) => {
+      return student.id === +id;
     });
 
-    login[index].password = type;
-    res.status(200).send(login);
+    if (type === "m1t") {
+      data[index].milestone1 = true;
+      sendIt;
+    } else if (type === "m2t") {
+      data[index].milestone2 = true;
+      sendIt;
+    } else if (type === "m2t") {
+      data[index].milestone3 = true;
+      sendIt;
+    } else if (type === "m1f") {
+      data[index].milestone1 = false;
+      sendIt;
+    } else if (type === "m2f") {
+      data[index].milestone2 = false;
+      sendIt;
+    } else if (type === "m3f") {
+      data[index].milestone3 = false;
+      sendIt;
+    }
   },
 };
