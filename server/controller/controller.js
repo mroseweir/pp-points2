@@ -2,13 +2,13 @@ const data = require("../database/data.json");
 const login = require("../database/login.json");
 let id = 2;
 module.exports = {
-  getPoints: (res, req) => {
+  getPoints: (req, res) => {
     res.status(200).send(data);
   },
-  getLogin: (res, req) => {
+  getLogin: (req, res) => {
     res.status(200).send(login);
   },
-  addStudent: (res, req) => {
+  addStudent: (req, res) => {
     let { name, cohortId, specialization } = req.body;
     cohortId = +cohortId;
     const newStudent = {
