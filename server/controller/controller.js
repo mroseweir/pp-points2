@@ -2,13 +2,13 @@ const data = require("../database/data.json");
 const login = require("../database/login.json");
 let id = 2;
 module.exports = {
-  getPoints: (res, req) => {
+  getPoints: (req, res) => {
     res.status(200).send(data);
   },
   getLogin: (res, req) => {
     res.status(200).send(login);
   },
-  addStudent: (res, req) => {
+  addStudent: (req, res) => {
     let { name, cohortId, specialization } = req.body;
     cohortId = +cohortId;
     const newStudent = {
@@ -52,6 +52,34 @@ module.exports = {
     } else if (type === "minus1") {
       data[index].points -= 1;
       res.status(200).send(data);
+    }
+  },
+  updateMilestone: (req, res, next) => {
+    const { id } = req.params;
+    const { type } = req.body;
+    const sendIt = res.status(200).send(data);
+    const index = data.findIndex((student) => {
+      return student.id === +id;
+    });
+
+    if (type === "m1t") {
+      data[index].milestone1 = true;
+      sendIt;
+    } else if (type === "m2t") {
+      data[index].milestone2 = true;
+      sendIt;
+    } else if (type === "m2t") {
+      data[index].milestone3 = true;
+      sendIt;
+    } else if (type === "m1f") {
+      data[index].milestone1 = false;
+      sendIt;
+    } else if (type === "m2f") {
+      data[index].milestone2 = false;
+      sendIt;
+    } else if (type === "m3f") {
+      data[index].milestone3 = false;
+      sendIt;
     }
   },
 };
