@@ -5,6 +5,7 @@ import AddStudent from "../src/pages/AddStudent";
 import StudentDirectory from "../src/pages/StudentDirectory";
 import AdminLogin from "../src/pages/AdminLogin";
 import Home from "../src/pages/Home";
+import StudentDirectoryAdmin from "../src/pages/StudentDirectoryAdmin";
 export default function App() {
   return (
     <div className="App">
@@ -14,6 +15,10 @@ export default function App() {
           <Route path="/StudentDirectory" component={StudentDirectory}></Route>
           <Route path="/AddStudent" component={AddStudent}></Route>
           <Route path="/AdminLogin" component={AdminLogin}></Route>
+          <Route
+            path="/StudentDirectoryAdmin"
+            component={StudentDirectoryAdmin}
+          ></Route>
         </Switch>
       </main>
     </div>

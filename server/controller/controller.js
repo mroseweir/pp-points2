@@ -10,7 +10,6 @@ module.exports = {
   },
   addStudent: (req, res) => {
     let { name, cohort, specialization } = req.body;
-    cohortId = +cohortId;
     const newStudent = {
       id: id,
       name,
