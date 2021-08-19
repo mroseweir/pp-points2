@@ -9,14 +9,17 @@ module.exports = {
     res.status(200).send(login);
   },
   addStudent: (req, res) => {
-    let { name, cohortId, specialization } = req.body;
+    let { name, cohort, specialization } = req.body;
     cohortId = +cohortId;
     const newStudent = {
       id: id,
       name,
-      cohortId,
+      cohort,
       specialization,
       points: 0,
+      milestone1: false,
+      milestone2: false,
+      milestone3: false,
     };
     data.push(newStudent);
     id++;
