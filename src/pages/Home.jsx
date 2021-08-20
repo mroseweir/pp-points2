@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/footer";
 import logo from "./unicorn.svg";
-// import PlusMinusBtn from "../../src/components/PlusMinusBtn";
-function home() {
+
+function Home() {
   return (
     <div>
       <Header />
@@ -17,4 +17,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;
