@@ -17,8 +17,10 @@ code {
     monospace;
 }
 nav {
+  position: fixed;
   height: 7vh;
   width: 100%;
+  margin-bottom: 10vh;
   background-color: #f4f4f4;
 }
 .nav-list {
@@ -53,10 +55,10 @@ nav {
   color: #19b6fa;
 }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 5vh;
-  width: 100%;
+  width: 100vw;
   background-color: #efefef;
   display: flex;
   align-items: center;
@@ -68,6 +70,10 @@ footer {
 }
 
 /* ////STUDENT DIRECTORY PAGE STYLING//// */
+
+.sDirectory {
+  padding-top: 10vh;
+}
 
 .directoryContainer {
   width: 100vw;
@@ -111,4 +117,43 @@ h1 {
   font-weight: 300;
   font-size: 3rem;
   color: #818181;
+}
+/*ADMIN LOGIN PAGE STYLEING*/
+.main-page {
+  margin-right: 40vw;
+  margin-left: 40vw;
+  margin-top: 28vh;
+}
+.form-input {
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 2vh;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #d8d8d8;
+  color: #b5b5b5;
+  font-size: 1.4rem;
+}
+.form-btn {
+  border: 2px solid #22ab00;
+  background-color: #22ab00;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.admin-login {
+  padding: 15px 10px;
+  background-color: #0177a9;
+  color: white;
+  border-radius: 5px;
+}
+.admin-log-header {
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+.form-input:focus {
+  border: 0;
 }

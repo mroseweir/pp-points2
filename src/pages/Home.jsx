@@ -9,7 +9,7 @@ function home() {
       <Header />
       <div className="logo-div">
         <h1 className="be-a">BE A</h1>
-        <img src={logo}></img>
+        <img src={logo} alt="A Unicorn"></img>
         <h1 className="champion">CHAMPION</h1>
       </div>
       <Footer />
