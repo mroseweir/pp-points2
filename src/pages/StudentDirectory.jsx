@@ -17,14 +17,14 @@ export default function StudentDirectory() {
 
   if (!post) return null;
 
-  function handleChange(a) {
-    setInput(a);
-    console.log(a);
-  }
+  // function handleChange(a) {
+  //   setInput(a);
+  //   console.log(a);
+  // }
 
-  function submit() {
-    console.log(input);
-  }
+  // function submit() {
+  //   console.log(input);
+  // }
 
   return (
     <div>
