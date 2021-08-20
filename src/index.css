@@ -17,8 +17,10 @@ code {
     monospace;
 }
 nav {
+  position: fixed;
   height: 7vh;
   width: 100%;
+  margin-bottom: 10vh;
   background-color: #f4f4f4;
 }
 .nav-list {
@@ -53,10 +55,10 @@ nav {
   color: #19b6fa;
 }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 5vh;
-  width: 100%;
+  width: 100vw;
   background-color: #efefef;
   display: flex;
   align-items: center;
@@ -68,6 +70,10 @@ footer {
 }
 
 /* ////STUDENT DIRECTORY PAGE STYLING//// */
+
+.sDirectory {
+  padding-top: 10vh;
+}
 
 .directoryContainer {
   width: 100vw;
