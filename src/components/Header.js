@@ -6,20 +6,26 @@ export default function Header() {
     <header className="header">
       <main>
         <nav>
-          <ul>
-            <li>
-              <Link to="/" element={<h1>test</h1>}>
+          <ul className="nav-list">
+            <li className="nav-items">
+              <Link className="nav-link" to="/" element={<h1>test</h1>}>
                 Home
               </Link>
             </li>
-            <li>
-              <Link to="/AddStudent">Add Student</Link>
+            <li className="nav-items">
+              <Link className="nav-link" to="/AddStudent">
+                Add Student
+              </Link>
             </li>
-            <li>
-              <NavLink to="/StudentDirectory">Student Directory</NavLink>
+            <li className="nav-items">
+              <NavLink className="nav-link" to="/StudentDirectory">
+                Student Directory
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/AdminLogin">Admin Login</NavLink>
+            <li className="nav-items">
+              <NavLink className="nav-link" to="/AdminLogin">
+                Admin Login
+              </NavLink>
             </li>
           </ul>
         </nav>
