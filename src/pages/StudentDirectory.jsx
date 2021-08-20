@@ -17,36 +17,50 @@ export default function StudentDirectory() {
 
   if (!post) return null;
 
-  // function handleChange(a) {
-  //   setInput(a);
-  //   console.log(a);
-  // }
+  function handleChange(a) {
+    setInput(a);
+    console.log(a);
+  }
 
-  // function submit() {
-  //   console.log(input);
-  // }
+  let unfilteredArr = post;
+
+  function submit(input) {
+    setPost(unfilteredArr);
+    // let postData = post;
+
+    let filteredArr = [];
+
+    for (let i = 0; i < unfilteredArr.length; i++) {
+      if (unfilteredArr[i].cohort === input) {
+        filteredArr.push(unfilteredArr[i]);
+      }
+      setPost(filteredArr);
+    }
+  }
 
   return (
     <div>
       <Header />
-      <h1>Student Directory</h1>
-      {/* <input onChange={(e) => handleChange(e.target.value)}></input>
-      <button onClick={() => submit()}>Submit</button> */}
-      <div className="directoryContainer">
-        <div className="keyCard">
-          <p className="keyInfo">Name</p>
-          <p className="keyInfo">Cohort</p>
-          <p className="keyInfo">#PP-Points</p>
-        </div>
-        {post.map((student, index) => (
-          <div className="studentCard">
-            <p className="studentInfo">{post[index].name}</p>
-            <p className="studentInfo">{post[index].cohort}</p>
-            <p className="studentInfo">{post[index].points}</p>
+      <div className="sDirectory">
+        <h1>Student Directory</h1>
+        <input onChange={(e) => handleChange(e.target.value)}></input>
+        <button onClick={() => submit(input)}>Submit</button>
+        <div className="directoryContainer">
+          <div className="keyCard">
+            <p className="keyInfo">Name</p>
+            <p className="keyInfo">Cohort</p>
+            <p className="keyInfo">#PP-Points</p>
           </div>
-        ))}
+          {post.map((student, index) => (
+            <div className="studentCard">
+              <p className="studentInfo">{post[index].name}</p>
+              <p className="studentInfo">{post[index].cohort}</p>
+              <p className="studentInfo">{post[index].points}</p>
+            </div>
+          ))}
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

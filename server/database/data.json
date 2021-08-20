@@ -3,7 +3,7 @@
     "id": 1,
     "name": "John Doe",
     "points": 25,
-    "cohort": "Foundations 3",
+    "cohort": "Foundations 2",
     "specialization": "Web Dev",
     "milestone1": false,
     "milestone2": false,
@@ -21,6 +21,126 @@
   },
   {
     "id": 3,
+    "name": "Michael Roseweir",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 4,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 5,
+    "name": "Wesley Mcghee",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 6,
+    "name": "Michael Roseweir",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 7,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 8,
+    "name": "Wesley Mcghee",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 9,
+    "name": "Michael Roseweir",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 10,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 11,
+    "name": "Wesley Mcghee",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 12,
+    "name": "Michael Roseweir",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 13,
+    "name": "John Doe",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 14,
+    "name": "Wesley Mcghee",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 15,
     "name": "Michael Roseweir",
     "points": 25,
     "cohort": "Foundations 3",
