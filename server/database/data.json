@@ -3,11 +3,30 @@
     "id": 1,
     "name": "John Doe",
     "points": 25,
-    "cohort": "Spec 1",
+    "cohort": "Foundations 3",
     "specialization": "Web Dev",
     "milestone1": false,
     "milestone2": false,
     "milestone3": false
-
+  },
+  {
+    "id": 2,
+    "name": "Wesley Mcghee",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
+  },
+  {
+    "id": 3,
+    "name": "Michael Roseweir",
+    "points": 25,
+    "cohort": "Foundations 3",
+    "specialization": "Web Dev",
+    "milestone1": false,
+    "milestone2": false,
+    "milestone3": false
   }
 ]

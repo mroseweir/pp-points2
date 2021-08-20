@@ -17,7 +17,13 @@ export default function StudentDirectory() {
 
   return (
     <div>
-      <h1>{post[0].name}</h1>
+      <Header />
+      <h1>Student Directory</h1>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <p>{post[0].name}</p>
+        <p>{post[0].cohort}</p>
+        <p>{post[0].points}</p>
+      </div>
     </div>
   );
 }
