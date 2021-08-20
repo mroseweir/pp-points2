@@ -18,6 +18,7 @@ code {
 }
 nav {
   position: fixed;
+  top: 0;
   height: 7vh;
   width: 100%;
   margin-bottom: 10vh;
