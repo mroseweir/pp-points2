@@ -30,14 +30,19 @@ export default function StudentDirectory() {
     <div>
       <Header />
       <h1>Student Directory</h1>
-      <input onChange={(e) => handleChange(e.target.value)}></input>
-      <button onClick={() => submit()}>Submit</button>
-      <div>
+      {/* <input onChange={(e) => handleChange(e.target.value)}></input>
+      <button onClick={() => submit()}>Submit</button> */}
+      <div className="directoryContainer">
+        <div className="keyCard">
+          <p className="keyInfo">Name</p>
+          <p className="keyInfo">Cohort</p>
+          <p className="keyInfo">#PP-Points</p>
+        </div>
         {post.map((student, index) => (
-          <div style={{ display: "flex" }}>
-            <p>{post[index].name}</p>
-            <p>{post[index].cohort}</p>
-            <p>{post[index].points}</p>
+          <div className="studentCard">
+            <p className="studentInfo">{post[index].name}</p>
+            <p className="studentInfo">{post[index].cohort}</p>
+            <p className="studentInfo">{post[index].points}</p>
           </div>
         ))}
       </div>

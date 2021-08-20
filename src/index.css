@@ -66,3 +66,49 @@ footer {
   font-size: 1.5rem;
   font-weight: 200;
 }
+
+/* ////STUDENT DIRECTORY PAGE STYLING//// */
+
+.directoryContainer {
+  width: 100vw;
+}
+.keyCard {
+  display: flex;
+  margin: auto;
+  background-color: #0177a9;
+  margin-top: 20px;
+  width: 70vw;
+  border-radius: 10px;
+  color: white;
+  justify-content: space-around;
+  height: 60px;
+}
+.keyInfo {
+  width: 200px;
+  height: 30px;
+  padding-top: 18px;
+  font-size: 24px;
+}
+.studentCard {
+  height: 30px;
+  display: flex;
+  margin: auto;
+  background-color: #19b6fa;
+  margin-top: 25px;
+  width: 70vw;
+  border-radius: 10px;
+  color: #000;
+  justify-content: space-around;
+}
+.studentInfo {
+  width: 200px;
+  height: 30px;
+  padding-top: 4px;
+}
+h1 {
+  height: 10vh;
+  padding-top: 25px;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #818181;
+}
