@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Header from "../components/Header";
 
 export default function AdminLogin() {
@@ -15,6 +16,7 @@ export default function AdminLogin() {
           <input type="submit" name="login" placeholder="submit"></input>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }

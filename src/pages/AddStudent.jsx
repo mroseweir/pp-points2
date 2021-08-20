@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer";
 import Header from "../components/Header";
 
 export default function AddStudent() {
@@ -23,6 +24,7 @@ export default function AddStudent() {
           <input type="submit" name="add" placeholder="Submit"></input>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }

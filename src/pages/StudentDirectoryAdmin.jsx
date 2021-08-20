@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Footer from "../components/footer";
 import Header from "../components/Header";
 const axios = require("axios");
 
@@ -24,6 +25,7 @@ export default function StudentDirectory() {
         <p>{post[0].cohort}</p>
         <p>{post[0].points}</p>
       </div>
+      <Footer />
     </div>
   );
 }
