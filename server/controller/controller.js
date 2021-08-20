@@ -12,14 +12,15 @@ module.exports = {
     let { name, cohort, specialization } = req.body;
     const newStudent = {
       id: id,
-      name,
-      cohort,
-      specialization,
+      name: name,
+      cohort: cohort,
+      specialization: specialization,
       points: 0,
       milestone1: false,
       milestone2: false,
       milestone3: false,
     };
+
     data.push(newStudent);
     id++;
     res.status(200).send(data);
