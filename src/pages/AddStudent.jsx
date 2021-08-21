@@ -80,11 +80,11 @@ export default function AddStudent() {
             type="submit"
             name="add"
             placeholder="Submit"
-            // onSubmit={createPost(
-            //   studentInput,
-            //   cohortInput,
-            //   specializationInput
-            // )}
+            onSubmit={createPost(
+              studentInput,
+              cohortInput,
+              specializationInput
+            )}
           ></input>
         </form>
       </div>

@@ -7,14 +7,17 @@ const baseURL = `http://localhost:4500/api/points`;
 
 export default function StudentDirectory() {
   const [post, setPost] = useState(null);
+  const [filtered, setFiltered] = useState(null);
   const [input, setInput] = useState(0);
 
   useEffect(() => {
     axios.get(baseURL).then((res) => {
       setPost(res.data);
+      setFiltered(res.data);
     });
   }, []);
 
+  if (!post) return null;
   if (!post) return null;
 
   function handleChange(a) {
@@ -22,12 +25,12 @@ export default function StudentDirectory() {
     console.log(a);
   }
 
-  let unfilteredArr = post;
-
+  let orgData = filtered;
+  let unfilteredArr = orgData;
   function submit(input) {
-    setPost(unfilteredArr);
     // let postData = post;
-
+    unfilteredArr = orgData;
+    console.log(orgData);
     let filteredArr = [];
 
     for (let i = 0; i < unfilteredArr.length; i++) {
