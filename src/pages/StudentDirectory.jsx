@@ -27,14 +27,13 @@ export default function StudentDirectory() {
   let orgData = filtered;
   let unfilteredArr = orgData;
   function submit(input) {
-    // let postData = post;
     unfilteredArr = orgData;
     console.log(orgData);
     let filteredArr = [];
 
     for (let i = 0; i < unfilteredArr.length; i++) {
       if (input === "") {
-        alert('DON"T WORK BITCH');
+        alert('DON"T WORK');
       } else if (
         unfilteredArr[i].cohort.toLowerCase() === input.toLowerCase()
       ) {
@@ -49,8 +48,16 @@ export default function StudentDirectory() {
       <Header />
       <div className="sDirectory">
         <h1>Student Directory</h1>
-        <input onChange={(e) => handleChange(e.target.value)}></input>
-        <button onClick={() => submit(input)}>Submit</button>
+        <div className="searchContainer">
+          <input
+            className="searchDirectory"
+            onChange={(e) => handleChange(e.target.value)}
+            placeholder="search by cohort"
+          ></input>
+          <button className="submitDirectory" onClick={() => submit(input)}>
+            Search
+          </button>
+        </div>
         <div className="directoryContainer">
           <div className="keyCard">
             <p className="keyInfo">Name</p>
