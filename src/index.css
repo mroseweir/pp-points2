@@ -119,6 +119,22 @@ h1 {
   font-size: 3rem;
   color: #818181;
 }
+.searchDirectory {
+  height: 3vh;
+  text-align: center;
+  margin-right: 10px;
+}
+.submitDirectory {
+  height: 3vh;
+  width: 55px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.submitDirectory:hover {
+  background-color: #19b6fa;
+  color: #000;
+  transition: ease-in-out 0.2s;
+}
 /*ADMIN LOGIN PAGE STYLEING*/
 .main-page {
   margin-right: 40vw;
