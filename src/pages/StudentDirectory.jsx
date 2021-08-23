@@ -6,8 +6,8 @@ const axios = require("axios");
 const baseURL = `http://localhost:4500/api/points`;
 
 export default function StudentDirectory() {
-  const [post, setPost] = useState(null);
-  const [filtered, setFiltered] = useState(null);
+  const [post, setPost] = useState(0);
+  const [filtered, setFiltered] = useState(0);
   const [input, setInput] = useState(0);
 
   useEffect(() => {
@@ -32,13 +32,10 @@ export default function StudentDirectory() {
     let filteredArr = [];
 
     for (let i = 0; i < unfilteredArr.length; i++) {
-      if (input === "") {
-        alert('DON"T WORK');
-      } else if (
-        unfilteredArr[i].cohort.toLowerCase() === input.toLowerCase()
-      ) {
+      if (unfilteredArr[i].cohort.toLowerCase() === input.toLowerCase()) {
         filteredArr.push(unfilteredArr[i]);
       }
+      console.log(filteredArr);
       setPost(filteredArr);
     }
   }
