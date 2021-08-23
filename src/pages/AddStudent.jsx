@@ -27,24 +27,29 @@ function AddStudent() {
   return (
     <div>
       <Header />
-      <div>
-        <h1>Add Student</h1>
+      <div className="main-page">
+        <div className="admin-login">
+          <h1 className="admin-log-header">Add Student</h1>
+        </div>
         <div>
           <form>
             <input
               type="text"
               placeholder="name"
               onChange={(e) => handleChangeName(e.target.value)}
+              className="form-input"
             ></input>
             <input
               type="text"
               placeholder="cohort"
               onChange={(e) => handleChangeCohort(e.target.value)}
+              className="form-input"
             ></input>
             <input
               type="text"
               placeholder="specialization"
               onChange={(e) => handleChangeSpec(e.target.value)}
+              className="form-input"
             ></input>
             <input
               type="submit"
@@ -52,6 +57,7 @@ function AddStudent() {
                 e.preventDefault();
                 sendIT();
               }}
+              className="form-input form-btn"
             ></input>
           </form>
         </div>

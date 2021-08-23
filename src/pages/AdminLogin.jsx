@@ -16,12 +16,12 @@ export default function AdminLogin() {
   }, []);
   function checkPass() {
     if (post[0].username !== username) {
-      return console.log("Hello");
+      return console.log("Hello no");
     } else {
       if (post[0].password !== password) {
-        return console.log("Hello");
+        return console.log("Hello no");
       } else {
-        return console.log("Hello");
+        return console.log("Hello yes");
       }
     }
   }
