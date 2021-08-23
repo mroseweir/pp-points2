@@ -70,7 +70,7 @@ footer {
   font-weight: 200;
 }
 
-/* ////STUDENT DIRECTORY PAGE STYLING//// */
+/* ////STUDENT DIRECTORY / ADMIN STUDENT DIRECTORY PAGE STYLING//// */
 
 .sDirectory {
   padding-top: 10vh;
@@ -135,6 +135,19 @@ h1 {
   color: #000;
   transition: ease-in-out 0.2s;
 }
+
+.plusMinusBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.plusMinusBtn:hover {
+  cursor: pointer;
+}
+
 /*ADMIN LOGIN PAGE STYLEING*/
 .main-page {
   margin-right: 40vw;
