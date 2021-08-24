@@ -22,7 +22,7 @@ export default function AccountInfo() {
       <h2>Profile:</h2>
       <strong>Email: </strong>
       {currentUser.email}
-      <button onclick={handleLogout}>log out</button>
+      <button onClick={handleLogout}>log out</button>
     </div>
   );
 }

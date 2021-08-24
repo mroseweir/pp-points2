@@ -21,7 +21,8 @@ export default function App() {
               path="/StudentDirectory"
               component={StudentDirectory}
             ></Route>
-            <Route path="/AddStudent" component={AddStudent}></Route>
+            {/* <Route path="/AddStudent" component={AddStudent}></Route> */}
+            <PrivateRoute path="/AddStudent" component={AddStudent} />
             <Route path="/AdminLogin" component={AdminLogin}></Route>
             <PrivateRoute
               path="/studentdirectoryadmin"

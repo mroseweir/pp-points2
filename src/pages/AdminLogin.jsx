@@ -19,7 +19,7 @@ export default function AdminLogin() {
       setError("");
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
-      history.push("/");
+      history.push("/studentdirectoryadmin");
     } catch {
       setError("Failed to log in!");
     }
