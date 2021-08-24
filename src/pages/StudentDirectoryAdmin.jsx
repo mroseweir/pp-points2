@@ -45,21 +45,17 @@ export default function StudentDirectory() {
 
   //Function below handles put request to update points for the student.
 
-  function addPoint() {
-    let id = 1;
-    axios.put(`${baseURL}/${id}`, { type: "plus1" }).then((res) => {
-      console.log("it works");
-      console.log(post[`${id}`].points);
-      return (post[`${id}`].points += 1);
+  function addPoint(id) {
+    let idNum = parseInt(id);
+    axios.put(`${baseURL}/${idNum}`, { type: "plus1" }).then((res) => {
+      setPost(res.data);
     });
   }
 
-  function subPoint() {
-    let id = 1;
-    axios.put(`${baseURL}/${id}`, { type: "minus1" }).then((res) => {
-      console.log("it works");
-      console.log(post[1].points);
-      return (post[`${id}`].points -= 1);
+  function subPoint(id) {
+    let idNum = parseInt(id);
+    axios.put(`${baseURL}/${idNum}`, { type: "minus1" }).then((res) => {
+      setPost(res.data);
     });
   }
 
@@ -88,7 +84,7 @@ export default function StudentDirectory() {
             <p className="keyInfo">#PP-Points</p>
           </div>
           {post.map((student, index) => (
-            <div className="studentCard">
+            <div key={post[index].id} className="studentCard">
               <p className="studentInfo">{post[index].name}</p>
               <p className="studentInfo">{post[index].cohort}</p>
               <label className="switch">
@@ -102,11 +98,19 @@ export default function StudentDirectory() {
               </label>
 
               <p className="studentInfo">
-                <button className="plusMinusBtn" onClick={() => subPoint()}>
+                <button
+                  data-user={post[index].id}
+                  className="plusMinusBtn"
+                  onClick={(e) => subPoint(e.target.dataset.user)}
+                >
                   -
                 </button>
                 {post[index].points}
-                <button className="plusMinusBtn" onClick={() => addPoint()}>
+                <button
+                  data-user={post[index].id}
+                  className="plusMinusBtn"
+                  onClick={(e) => addPoint(e.target.dataset.user)}
+                >
                   +
                 </button>
               </p>

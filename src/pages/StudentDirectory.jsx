@@ -62,7 +62,7 @@ export default function StudentDirectory() {
             <p className="keyInfo">#PP-Points</p>
           </div>
           {post.map((student, index) => (
-            <div className="studentCard">
+            <div key={post[index].id} className="studentCard">
               <p className="studentInfo">{post[index].name}</p>
               <p className="studentInfo">{post[index].cohort}</p>
               <p className="studentInfo">{post[index].points}</p>
