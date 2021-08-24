@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 function Footer() {
   const footerArr = [
@@ -24,4 +24,4 @@ function Footer() {
     </footer>
   );
 }
-export default Footer;
+export default memo(Footer);
