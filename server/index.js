@@ -7,6 +7,14 @@ const ctrl = require("./controller/controller");
 app.use(express.json());
 app.use(cors());
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
+app.get("*", (request, response) => {
+  response.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
 //commands for the controler file
 app.get("/api/points", ctrl.getPoints);
 app.get("/api/login", ctrl.getLogin);
