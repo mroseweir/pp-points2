@@ -1,20 +1,12 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = process.env.PORT || 4500;
+const port = 4500;
 const ctrl = require("./controller/controller");
-const path = require("path");
+
 //establish Middleware
 app.use(express.json());
 app.use(cors());
-
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"));
-}
-
-app.get("*", (request, response) => {
-  response.sendFile(path.join(__dirname, "build", "index.html"));
-});
 
 //commands for the controler file
 app.get("/api/points", ctrl.getPoints);
